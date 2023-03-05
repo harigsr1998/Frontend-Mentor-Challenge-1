@@ -20,12 +20,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 This is the first webpage I built completely by myself. I have only recently statred my web development journey with the help of 'The Complete 2023 Web Development Bootcamp' course by Dr. Angela Yu. I had completed upto the fifth module - Intermediate CSS, where Frontend Mentor was suggested for additional practice. So this is the firt challenge I tried. It is a newbie level challenge.
 ### Screenshot
 
-![](images/screenshot-desktop.jpeg)
-![](images/screenshot-mobile.jpeg)
+![](images/screenshot-webpage-desktop.jpeg)
+![](images/screenshot-webpage-mobile.png)
 
 ### Links
 
-- Solution URL: [Github Repository](https://your-solution-url.com)
+- Solution URL: [Github Repository](https://github.com/harigsr1998/Frontend-Mentor-Challenge-1)
 - Live Site URL: [Github Page](https://harigsr1998.github.io/Frontend-Mentor-Challenge-1/)
 
 ## My process
