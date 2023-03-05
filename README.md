@@ -15,89 +15,86 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
+This is the first webpage I built completely by myself. I have only recently statred my web development journey with the help of 'The Complete 2023 Web Development Bootcamp' course by Dr. Angela Yu. I had completed upto the fifth module - Intermediate CSS, where Frontend Mentor was suggested for additional practice. So this is the firt challenge I tried. It is a newbie level challenge.
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](images/screenshot-desktop.jpeg)
+![](images/screenshot-mobile.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repository](https://your-solution-url.com)
+- Live Site URL: [Github Page](https://harigsr1998.github.io/Frontend-Mentor-Challenge-1/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- HTML5
+- CSS 3
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+This challenge was fairly simple. All you had to do was create the design from the screenshots provided. Some style guides, the HTML boilerplate code and instructions were provided. Coding seemed fairly easy. I just looked at the resolution of the screenshots provided and estimated various heights and widths to the best of my ability. This is when I realized that the default height of the body depends on the content inside it. So I had a fun time adjusting paddings and margins to get the height of the webpage equal to that of the provided screenshots. I created the desktop website at first. Tried to use percentages for different values. But I quickly realized that was going to be difficult. So then changed to using pixels. Got everything more or less accurate for the provided width of the webpage. Then converted all values to em instead of pixels to make it a responsive webpage. That was the desktop webpage finished. After that resized the viewport to the mobile version to see if the webpage scaled to the same as the provided screenshot. There was a bit of inconsistency compared to the provided screenshot. So I did a bit of digging to resolve this. Here, I learnt about using media queries, more about responsive design and about dynamic serving. Since I had already applied responsive design and since dynamic serving was beyond my knowledge at this point, I learnt the necessary details about using media queries and applied it to the webpage. This was a bit of a challenge to get right. I have now reached a satisfactory solution. I also learnt it is possible to change the CSS of an HTML tag within a parent tag which has a class, without creating a new class for said specific tag. I have provided an example of this from my code below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/harigsr1998">Harigovind</a>.
+</div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    padding-top: 9.3625rem;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+To see some CSS code snippets I'm proud of, see below:
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+@media(max-width: 375.2px){
+    body{
+        font-family: 'Outfit', sans-serif;
+        text-align: center;
+        background-color: hsl(212, 45%, 89%);
+        margin: 0;
+        padding-top: 5.20625rem;
+    }
+    img{
+        width: 16.875rem;
+        margin: 0.9375rem;
+        border-radius: 0.625rem;
+    }
+    .
+    .
+    .
+    .
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I would love to learn more about differnt media queries and how to utilize them. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+One issue I encountered was that the body would never achieve a width of 375px exactly, it would always be 375.2px. This created some problems with the media query and I have not found why this happens or how to solve it. For now I have pretty much placed a band-aid to stop the bleeding. However, I would like to learn how to properly resolve it.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) - This helped learn about media queries. I have used MDN Web Docs for learning and troubleshooting before and found it very useful. I will be forever using it.
+- [Website Builder Expert](https://www.websitebuilderexpert.com/building-websites/how-to-make-website-mobile-friendly/) - This is an amazing article which proved to be  a refernce to understand more about responsive web desing and about dynamic serving.
+- [Flowmatters](https://www.flowmatters.com/blog/pros-cons-responsive-design-vs-dynamic-serving-vs-dedicated-mobile-site/) - This blog post too provided a valuable refernce to understand more about responsive web desing and about dynamic serving.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Harigovind](https://harigsr1998.github.io/cv/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I would like to thank Dr. Angela Yu for her amazing course 'The Complete 2023 Web Development Bootcamp'. It has started me on a journey I thoroughly enjoy. It is an amazing course where she, in addition to teaching you about Web Development, teaches you to find resources and teach yourself and also gives you tips to stay positive and focused. Frankly, I cannot thank her enough for her help in my journey and could not have asked for a better mentor.
