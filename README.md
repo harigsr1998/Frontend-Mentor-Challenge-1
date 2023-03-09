@@ -94,6 +94,7 @@ One issue I encountered was that the body would never achieve a width of 375px e
 ## Author
 
 - Website - [Harigovind](https://harigsr1998.github.io/cv/)
+- Frontend Mentor - [@harigsr1998](https://www.frontendmentor.io/profile/harigsr1998)
 
 ## Acknowledgments
 
